@@ -1,6 +1,6 @@
 
 import streamlit
-import snowflake.connector
+
 
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -37,3 +37,5 @@ streamlit.write('The user entered ', fruit_choice)
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Lo convierte en un dataframe
 streamlit.dataframe(fruityvice_normalized)
+
+import snowflake.connector
